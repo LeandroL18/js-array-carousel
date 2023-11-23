@@ -26,3 +26,16 @@ right.addEventListener("click",
     }
 )
  
+
+// al click del bottone left spostiamo la classe active all'immagine precedente
+left.addEventListener("click", 
+    function(){
+        if(activeItem > 0){
+            item[activeItem].classList.remove("active");
+
+            activeItem --;
+
+            item[activeItem].classList.add("active");
+        }
+    }
+)
